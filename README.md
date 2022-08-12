@@ -1,12 +1,17 @@
 # Quick Start
 
 ```
-git clone --recursive https://github.com/allisonvacanti/nvbench_demo.git
+git clone --recursive <this_project> nvbench_demo
 
-cd nvbench_demo
+mkdir -p nvbench_demo/build
 
-# Use your actual target architecture(s) or omit the option:
-cmake -DCMAKE_CUDA_ARCHITECTURES=70-real .
+cd nvbench_demo/build
+
+# Use your actual target architecture(s) or omit the option
+# You can look it up at https://developer.nvidia.com/cuda-gpus
+#
+# Compiling on GeForce GTX 3080 Ti:
+cmake -DCMAKE_CUDA_ARCHITECTURES=86 ..
 
 make
 
