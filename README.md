@@ -1,7 +1,7 @@
 # Quick Start
 
 ```
-git clone --recursive <this_project> nvbench_demo
+git clone --recursive https://github.com/nnlib/nvbench_demo.git nvbench_demo
 
 mkdir -p nvbench_demo/build
 
